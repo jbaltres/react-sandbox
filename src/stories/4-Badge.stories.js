@@ -5,4 +5,8 @@ export default {
   title: "Badge"
 };
 
-export const defaultBadge = () => <NormalBadge />;
+export const active = () => <NormalBadge />;
+
+export const redBadge = () => <NormalBadge backgroundColor="#FE6F61" />;
+
+export const inactive = () => <NormalBadge a={false} />;
