@@ -35,7 +35,7 @@ function getbgColor(length) {
     };
   }
 }
-function PasswordInput(onChange, value) {
+function PasswordInput() {
   let [password, setPassword] = React.useState("");
   const passwordLength = password.length;
 
