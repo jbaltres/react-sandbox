@@ -11,10 +11,10 @@ const Badge = styled.div`
   border: ${props => (props.active ? "" : "solid #547FB3 1px")};
 `;
 
-export default function NormalBadge({ a = true, backgroundColor }) {
+export default function NormalBadge({ a = true, backgroundColor, children }) {
   return (
-    <Badge active={a} m={backgroundColor}>
-      Asiatisch
+    <Badge active={a} m={backgroundColor} children>
+      {children}
     </Badge>
   );
 }

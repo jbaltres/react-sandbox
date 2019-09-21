@@ -5,11 +5,13 @@ export default {
   title: "Badge"
 };
 
-export const active = () => <NormalBadge />;
+export const active = () => <NormalBadge>Türkisch</NormalBadge>;
 
-export const redBadge = () => <NormalBadge backgroundColor="#FE6F61" />;
+export const inactive = () => <NormalBadge a={false}>Türkisch</NormalBadge>;
 
-export const inactive = () => <NormalBadge a={false} />;
+export const redBadge = () => (
+  <NormalBadge backgroundColor="#FE6F61">Asiatisch</NormalBadge>
+);
 
 // Alte Lösung
 
