@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Badge = styled.div`
   width: fit-content;
@@ -18,6 +19,10 @@ export default function NormalBadge({ a = true, backgroundColor, children }) {
     </Badge>
   );
 }
+
+Badge.propTypes = {
+  active: PropTypes.bool
+};
 
 // Alte Lösung
 
